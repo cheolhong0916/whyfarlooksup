@@ -1205,14 +1205,14 @@
     </div>
 
     <div class="conclusion-box">
-      <div class="conc-eq">High Coh_D &nbsp;+&nbsp; Low VD-EI &nbsp;=&nbsp; Robust Spatial Reasoning</div>
-      <p>Representation structure — not benchmark accuracy — reliably indicates genuine 3D spatial understanding.</p>
+      <div class="conc-eq">Coh_D: a structural signature of robust spatial reasoning</div>
+      <p>Coherent distance representations track robustness across benchmarks; VD-EI serves as a complementary diagnostic.</p>
     </div>
 
     <div class="route-cards">
       <div class="route-card">
         <div class="route-title">🔵&ensp;Auxiliary depth supervision</div>
-        <div class="route-body">Large-scale RGB-D training directly exposes 3D geometry, building coherent and disentangled spatial axes.</div>
+        <div class="route-body">Models trained with large-scale RGB-D supervision can develop high Coh_D and exhibit consistent robustness across benchmarks — one setting in which structured spatial axes coincide with strong performance.</div>
         <div class="chips">
           <span class="chip">RoboRefer-2B</span>
           <span class="chip">CohD 0.182</span>
@@ -1221,7 +1221,7 @@
       </div>
       <div class="route-card">
         <div class="route-title">⚡&ensp;Very large-scale pretraining</div>
-        <div class="route-body">At sufficient scale, structured representations emerge even without targeted spatial supervision.</div>
+        <div class="route-body">Comparable structural properties can also emerge without targeted spatial supervision, suggesting scale alone is another setting in which such representations may arise.</div>
         <div class="chips">
           <span class="chip">Qwen3-VL-235B</span>
           <span class="chip">v = 0.908</span>
