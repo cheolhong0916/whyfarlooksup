@@ -1052,7 +1052,7 @@
     </script>
 
     <div id="ft-note-box" class="note-box" style="display:none;">
-      Scaling partially helps the accuracy, but the gap between consistent and counter-set accuracy persists. The bias cannot be resolved by data quantity alone.
+      Scaling does not fully close the consistent–counter gap in our experiments. Additional data alone does not eliminate the disparity.
     </div>
     <script>
       /* Show/hide note-box together with chart */
@@ -1103,7 +1103,7 @@
       </p>
 
       <div class="note-box" style="margin-top:1rem;">
-      Scaling steadily improves accuracy on <strong>consistent</strong> cells, but <strong>counter</strong> cells remain substantially harder throughout. The bias persists even at 2M training samples — confirming it is <strong>model-intrinsic</strong>, not a dataset artifact.
+      Scaling steadily improves accuracy on <strong>consistent</strong> cells, but <strong>counter</strong> cells remain substantially harder throughout. The gap persists even at 2M training samples, indicating the bias is largely <strong>model-intrinsic</strong> rather than a dataset artifact.
     </div>
   </div>
 </section>
@@ -1182,11 +1182,11 @@
       <div class="strong-cards">
         <div class="group-card s">
           <div class="group-title">RoboRefer-2B — Three clean clusters</div>
-          <div class="group-body" style="font-size:0.8rem;">Each axis aligned with a distinct PCA component.<br>CohD <strong>0.182</strong> · VD-EI <strong>0.362</strong></div>
+          <div class="group-body" style="font-size:0.8rem;">Each axis aligned with a distinct PCA component.</div>
         </div>
         <div class="group-card s">
           <div class="group-title">Qwen3-VL-235B — Well-separated axes</div>
-          <div class="group-body" style="font-size:0.8rem;">Scale achieves similar disentanglement.<br>v = 0.908 · Δ = +0.068</div>
+          <div class="group-body" style="font-size:0.8rem;">Comparable structure emerges at scale.</div>
         </div>
       </div>
     </div>
@@ -1200,7 +1200,7 @@
       <div>
         <!-- Figure 6b (논문 Fig. 6b) — cohd_vdei.png -->
         <img src="./static/images/cohd_vdei.png" style="width:100%; border-radius:8px;" alt="Figure 6b">
-        <p class="fig-caption">RoboRefer occupies a unique region of high coherence and low entanglement.</p>
+        <p class="fig-caption">RoboRefer occupies a region of notably high Coh_D (with low VD-EI as a complementary indicator).</p>
       </div>
     </div>
 
